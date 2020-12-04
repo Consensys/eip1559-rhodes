@@ -30,3 +30,6 @@ p2p-port=30303
 
 # eip1559 testnet
 Xeip1559-enabled=true
+
+miner-enabled=true
+miner-coinbase="0xfe3b557e8fb62b89f4916b721be55ceb828dbd73"
