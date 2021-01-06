@@ -25,7 +25,7 @@ rpc-ws-host="0.0.0.0"
 rpc-ws-port=8546
 
 # p2p
-p2p-host=""
+p2p-host="<%= p2pHost %>"
 p2p-port=30303
 
 # eip1559 testnet
