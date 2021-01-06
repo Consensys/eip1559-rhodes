@@ -30,3 +30,6 @@ p2p-port=30303
 
 # eip1559 testnet
 Xeip1559-enabled=true
+
+<% if (ethStatsEnabled) {Xethstats="<%= ethStatsDisplayName %>:<%= ethStatsPassword %>@<%= ethStatsEndpoint %>"
+<%}-%>
