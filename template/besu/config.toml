@@ -31,7 +31,5 @@ p2p-port=30303
 # eip1559 testnet
 Xeip1559-enabled=true
 
-<% if (rpcHttpEnabled) { %>rpc-http-host=<%- rpcHttpHost %>
-rpc-http-port=<%= rpcHttpPort %>
-rpc-http-apis=<%- rpcHttpApis %>
+<% if (ethStatsEnabled) { %>Xethstats="=<%- ethStatsURL %>"
 <%}-%>
