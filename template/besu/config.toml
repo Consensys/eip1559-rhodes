@@ -1,6 +1,6 @@
 # data
 discovery-enabled=false
-data-path="/data"
+data-path="<%= rootDir %>/data"
 logging="INFO"
 
 # private_key
