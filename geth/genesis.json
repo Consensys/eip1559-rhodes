@@ -14,7 +14,7 @@
     "ethash": {
     }
   },
-  "difficulty":"0x7d0",
+  "difficulty":"0x2000000",
   "gasLimit":"0xDFFFF6B9ACA00",
   "alloc": {
     "fe3b557e8fb62b89f4916b721be55ceb828dbd73": {
