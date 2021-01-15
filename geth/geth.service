@@ -1,0 +1,18 @@
+[Unit]
+Description=Ethereum go client
+After=syslog.target network.target
+
+[Service]
+User=geth
+Group=geth
+Environment=HOME=/home/geth
+Type=simple
+ExecStart=/usr/local/bin/geth --networkid "280" --etherbase "0x2bb87953e4be9e0bb1909f8b26ac616fedd7fde4" --allow-insecure-unlock --unlock "0x2bb87953e4be9e0bb1909f8b26ac616fedd7fde4" --password "/var/geth/pwd" --mine --http --http.api "web3,net,eth,admin,debug,miner,personal,txpool" --http.corsdomain "*" --http.vhosts "*" --nodiscover
+KillMode=process
+KillSignal=SIGINT
+TimeoutStopSec=90
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
