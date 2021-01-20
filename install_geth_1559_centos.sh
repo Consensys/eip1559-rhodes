@@ -36,3 +36,4 @@ WantedBy=multi-user.target
 EOT
 sudo systemctl daemon-reload
 geth --nousb --datadir /data init /etc/geth/genesis.json
+sudo chown -R ec2-user:ec2-user /home/ec2-user
