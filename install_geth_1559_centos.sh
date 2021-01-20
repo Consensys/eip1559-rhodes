@@ -13,7 +13,6 @@ make geth
 echo 'export PATH=$PATH:/home/ec2-user/go-ethereum/build/bin' | sudo tee -a /etc/profile.d/geth.sh
 source /etc/profile
 sudo mkdir -p /data /var/log/geth /etc/geth
-sudo chown -R ec2-user:ec2-user /data /var/log/geth /etc/geth
 cd /etc/geth
 wget https://raw.githubusercontent.com/ConsenSys/eip1559-rhodes/main/geth/genesis.json
 wget https://raw.githubusercontent.com/ConsenSys/eip1559-rhodes/main/geth/config.toml
@@ -36,4 +35,4 @@ WantedBy=multi-user.target
 EOT
 sudo systemctl daemon-reload
 geth --nousb --datadir /data init /etc/geth/genesis.json
-sudo chown -R ec2-user:ec2-user /home/ec2-user
+sudo chown -R ec2-user:ec2-user /data /var/log/geth /etc/geth /home/ec2-user
