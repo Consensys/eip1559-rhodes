@@ -35,3 +35,4 @@ RestartSec=10s
 WantedBy=multi-user.target
 EOT
 sudo systemctl daemon-reload
+geth --nousb --datadir /data init /etc/geth/genesis.json
